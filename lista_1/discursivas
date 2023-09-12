@@ -1,0 +1,100 @@
+Questão 1:
+	a) 1
+	b) -2
+	c) 3
+	d) 10
+------------------------------------------------------
+
+Questão 2:
+  	a) 4094
+	b) 7
+	c) 5
+	d) 15
+	e) 9
+------------------------------------------------------
+
+Questão 3:
+ 	p = i
+	i = (*&)j
+	q = *p
+------------------------------------------------------
+
+Questão 4:
+	a) 20
+	b) 29.0
+	c) P
+	d) e
+	e) P
+	f) e
+	g) t
+	h) 31
+	i) 45
+	j) 27
+	l) 31
+	m) 45
+	n) 27
+------------------------------------------------------
+
+Questão 5:
+	contador/valor/valor/endereco/endereco
+	i = 0 vet[0] = 1.1 *(f + 0) = 1.1 &vet[0] = 61FDF0 (f + 0) = 61FDF0
+	i = 1 vet[1] = 2.2 *(f + 1) = 2.2 &vet[1] = 61FDF4 (f + 1) = 61FDF4
+	i = 2 vet[2] = 3.3 *(f + 2) = 3.3 &vet[2] = 61FDF8 (f + 2) = 61FDF8
+	i = 3 vet[3] = 4.4 *(f + 3) = 4.4 &vet[3] = 61FDFC (f + 3) = 61FDFC
+	i = 4 vet[4] = 5.5 *(f + 4) = 5.5 &vet[4] = 61FE00 (f + 4) = 61FE00
+
+------------------------------------------------------
+Questão 6:
+	*(pulo + 2)
+
+------------------------------------------------------
+Questão 7:
+	(p =  mat + 1) o ponteiro p aponta para o endereço de mat + 1
+	(x = (*mat)++) o inteiro x recebe o conteudo de mat que será incrementado em 1
+
+------------------------------------------------------
+Questão 8:
+	o programa 'a' declara um vetor e um inteiro e utiliza um laço for para iterar no vetor 'vet' e exibir o conteúdo de seus elementos
+	o programa 'b' declara um vetor e um inteiro e utiliza um laço for para iterar no vetor 'vet' exibir os endereços de memória de seus elementos
+
+------------------------------------------------------
+Questão 9:
+	char: 4093, 4094, 4095
+	int: 4094, 4096, 4098
+	float: 4096, 4100, 4104
+	double: 4100, 4108, 4116
+
+------------------------------------------------------
+Questão 10:
+	exceto pelo int, que ocupa 4 bytes no meu computador, todas as outras respostas coincidiram com a idealização da questão anterior.
+
+------------------------------------------------------
+Questão 11:
+	válidos:
+		aloha[2] = value
+		coisas[4][4] = aloha[3]
+		pf = aloha
+	inválidos:
+		scanf("%f", &aloha)
+		aloha = value
+		printf("%f", aloha)
+		coisas[5] = aloha
+		pf = value
+------------------------------------------------------
+Questão 12:
+	um ponteiro para função é uma variável que guarda o endereço de uma função em um programa e permite chamar essa função usando o ponteiro. Os ponteiros pra funções também podem ser passados como argumento pra outras funções.
+
+	#include <stdio.h>
+
+	void imprime() {
+   	 printf("Hello world!\n");
+	}
+
+	int main() {
+    	void (*pf)(void);
+    	pf = imprime;
+
+    	pf();
+    	return 0;
+	}
+	
